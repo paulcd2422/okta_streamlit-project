@@ -29,7 +29,7 @@ def load_data(dir):
     reader = SimpleDirectoryReader(input_dir=dir, recursive=True)
     docs = reader.load_data()
     Settings.llm = OpenAI(
-        model="gpt-4o-mini",
+        model="gpt-4.1-mini",
         temperature=0.2,
         system_prompt="""Your job is to answer employee questions about Stark Industries internal processes. 
         Use the provided documentation, and do not generate information beyond what is available. If you do not know the answer, admit it. 
